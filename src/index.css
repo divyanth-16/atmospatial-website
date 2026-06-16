@@ -1,1 +1,140 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', 'Manrope', system-ui, sans-serif;
+    background-color: #001b33;
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #1326D3;
+    color: white;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .btn-primary {
+    @apply bg-transparent border border-2 border-blue-600 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-sky/50 hover:border-sky text-sky hover:text-blue-400 font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-sky/10;
+  }
+
+  .card-dark {
+  @apply bg-blue-200 border border-blue-400 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300;
+}
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-sky via-primary-light to-sky bg-clip-text text-transparent;
+  }
+
+  .gold-accent {
+    @apply text-gold;
+  }
+
+  .section-label {
+    @apply text-xs font-black tracking-[0.2em] uppercase text-gold/80;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #081120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1326D3;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3545e8;
+}
+
+/* Grid background pattern */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(19, 38, 211, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 38, 211, 0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Glowing orb effect */
+.orb-glow {
+  filter: blur(80px);
+  border-radius: 50%;
+}
+
+/* Satellite orbit animation */
+@keyframes orbit-path {
+  0% { transform: rotate(0deg) translateX(140px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
+}
+
+.satellite-orbit {
+  animation: orbit-path 15s linear infinite;
+}
+
+/* Atmospheric particle drift */
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+  33% { transform: translate(30px, -20px) scale(1.1); opacity: 0.6; }
+  66% { transform: translate(-20px, 15px) scale(0.9); opacity: 0.4; }
+}
+
+.particle {
+  animation: drift 8s ease-in-out infinite;
+}
+
+/* Page transition */
+.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Lightning effect */
+@keyframes lightning-flash {
+  0%, 90%, 100% { opacity: 0; }
+  92%, 96% { opacity: 1; }
+}
+.lightning-effect {
+  animation: lightning-flash 4s infinite;
+}

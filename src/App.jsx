@@ -1,20 +1,59 @@
-import { useState } from 'react'
-import logo from "./assets/Atmospatial_Analytics_Pvt_Ltd_Transparent_logo.png";
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import About from './pages/About'
+import Products from './pages/Products'
+import News from './pages/News'
+import Contact from './pages/Contact'
 
+const pageVariants = {
+  initial: { opacity: 0, y: 16 },
+  in: { opacity: 1, y: 0 },
+  out: { opacity: 0, y: -8 },
+}
 
-function App() {
-  
+const pageTransition = {
+  type: 'tween',
+  ease: 'easeOut',
+  duration: 0.4,
+}
 
+function AnimatedRoutes() {
+  const location = useLocation()
   return (
-   <div className='flex flex-col items-center justify-center h-screen text-4xl font-bold bg-blue-100'>
-  <img
-    src={logo}
-    alt="Company Logo"
-    className="w-48 mb-4"
-  />
-  <h1>Website Under Construction...</h1>
-</div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location.pathname}
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </motion.div>
+    </AnimatePresence>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <Router>
+      <div className="min-h-screen bg-sky-50 flex flex-col">
+        <Navbar />
+        <main className="flex-1">
+          <AnimatedRoutes />
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  )
+}
