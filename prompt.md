@@ -1,203 +1,328 @@
-I am providing my current Home.jsx file for the official website of ATMOSPATIAL ANALYTICS PVT. LTD.
+Build a premium, modern, enterprise-grade About Us page for Atmospatial Analytics Pvt. Ltd.
 
-Before making changes, carefully analyze the existing structure, content, and component organization. Do NOT rewrite the page from scratch. Preserve the existing content hierarchy, messaging, and overall React architecture unless there is a strong reason to improve it.
+The page must visually feel like it belongs to the existing Home page.
 
-My goal is a complete visual redesign of the Home page while keeping the code maintainable and easy to understand.
+DESIGN SYSTEM (MUST MATCH HOMEPAGE)
 
-COMPANY CONTEXT
+Use the exact same design language as the Home page:
 
-ATMOSPATIAL ANALYTICS PVT. LTD. is focused on:
+Primary Blue: #153E8A
+Mid Blue: #1E5BBD
+Gold Accent: #C69214
+Light Background: #EEF6FF
+Dark Text: #0F2557
+Body Text: #374151
 
-* Atmospheric Intelligence
-* Climate Intelligence
-* Geospatial Analytics
-* Remote Sensing
-* Satellite Data Analytics
-* Disaster Risk Monitoring
-* AI/ML Forecasting
-* Earth Observation
+Maintain:
 
-The website should feel like a premium scientific and geospatial intelligence company.
+Same typography hierarchy
+Same spacing scale
+Same Framer Motion animation style
+Same premium scientific aesthetic
+Same rounded corners
+Same hover interactions
+Same visual quality
+
+Reference the homepage structure and visual language.
+
+OVERALL FEEL
+
+DO NOT create:
+
+Startup-style cards everywhere
+Generic SaaS layouts
+Heavy statistics sections
+Too many boxes
+Too much text
+
+The page should feel:
+
+Scientific
+Premium
+Clean
+Trustworthy
+Research-driven
+Government-grade
+Enterprise-grade
 
 Think:
 
-* NASA
-* ESA
-* ISRO
-* Climate Intelligence Platform
-* Earth Observation Company
+NASA × IBM × Climate Intelligence Platform
 
-NOT:
+not
 
-* Crypto Startup
-* Generic SaaS Landing Page
-* AI Hype Website
-* Marketing-heavy Startup
+Random SaaS Startup
 
-DESIGN DIRECTION
+PAGE STRUCTURE
+SECTION 1 — HERO
 
-Use a predominantly light theme.
+Full screen hero.
 
-Primary colors:
+Background:
 
-* White
-* Off-white
-* Very light atmospheric blue
-* Deep professional blue
-* Gold accents
+Premium atmospheric intelligence visual
+Scientific climate visualization
+Blue atmospheric gradients
+Geospatial patterns
+Subtle animated particles
 
-Maintain blue + gold as the brand identity.
+Headline:
 
-The overall design should feel:
+About Atmospatial Analytics
 
-* Professional
-* Premium
-* Scientific
-* Trustworthy
-* Clean
-* Modern
-* Research-driven
+Subheadline:
 
-TYPOGRAPHY
+Transforming Atmospheric Data into Actionable Intelligence for Climate Resilience.
 
-Increase text readability significantly.
+Short paragraph:
 
-Requirements:
+Atmospatial Analytics combines atmospheric science, remote sensing, geospatial intelligence, and artificial intelligence to help organizations make informed climate and weather decisions.
 
-* Larger headings
-* Larger section titles
-* Larger descriptions
-* Better spacing
-* Strong visual hierarchy
+Below:
 
-Headings should feel authoritative and impactful.
+Elegant scroll indicator.
 
-Avoid tiny text.
+No buttons.
 
-Users should be able to scan content easily.
+SECTION 2 — OUR STORY
 
-LAYOUT REQUIREMENTS
+Unique asymmetrical layout.
 
-Avoid overusing cards and boxes.
+Left:
 
-The current design relies too heavily on:
+Large typography.
 
-* Rectangular cards
-* Feature boxes
-* Repeated grid cards
+Headline:
 
-Please redesign sections using more creative layouts.
+Science First. Impact Driven.
 
-Examples:
+Right:
 
-* Radial layouts
-* Timeline-inspired layouts
-* Split layouts
-* Alternating content layouts
-* Connected information layouts
-* Typography-driven layouts
+Story content.
 
-Do not default to placing every piece of information inside a card.
+Keep it concise.
 
-Each major section should feel visually distinct.
+Content should explain:
+
+Company founded with vision of climate resilience
+Bridge gap between research and real-world decision making
+Transform scientific data into practical intelligence
+Focus on India-specific climate challenges
+
+Add a thin animated gold vertical line between both columns.
+
+SECTION 3 — MISSION & VISION
+
+Interactive split section.
+
+Not cards.
+
+Layout:
+
+Left side:
+Mission
+
+Right side:
+Vision
+
+On hover:
+
+subtle background glow
+gold accent line expands
+
+Mission:
+
+Deliver AI-powered atmospheric and geospatial intelligence that enables proactive climate decisions.
+
+Vision:
+
+Become India's leading climate intelligence company supporting resilient communities, industries, and governments.
+
+SECTION 4 — FOUNDING LEADERSHIP
+
+This should be the hero section of the page.
+
+Large centered title:
+
+Leadership
+
+Then two premium profile layouts.
+
+NOT normal team cards.
+
+Design inspiration:
+
+Apple leadership page.
+
+Layout:
+
+Two large portrait images.
+
+Dr. Penki Ramesh Kumar
+
+Founder
+
+PhD Atmospheric & Space Science
+
+Remote Sensing & Lightning Researcher
+
+Short description:
+
+Leading research and innovation in atmospheric science, remote sensing, weather analytics, and climate intelligence systems.
+
+Mrs. P. Dhanalakshmi
+
+Director
+
+Short description:
+
+Supporting organizational growth through administration, operations, stakeholder engagement, and business coordination.
+
+Interaction:
+
+Image zoom on hover
+Gold accent line animation
+Smooth reveal animation
+
+Make this section elegant and premium.
+
+SECTION 5 — WHAT MAKES US DIFFERENT
+
+Avoid cards.
+
+Create an interactive vertical timeline.
+
+Each point appears while scrolling.
+
+Use icons.
+
+Items:
+
+Scientific Expertise
+Atmospheric Intelligence
+AI + Climate Analytics
+Remote Sensing & GIS
+Research-to-Impact Approach
+India-Focused Solutions
+
+Each point:
+
+small description.
+
+Timeline uses gold line in center.
+
+SECTION 6 — OUR APPROACH
+
+Unique circular workflow design.
+
+Animated.
+
+6 connected nodes:
+
+Data Collection
+
+↓
+
+Atmospheric Analysis
+
+↓
+
+AI Modelling
+
+↓
+
+Geospatial Intelligence
+
+↓
+
+Decision Support
+
+↓
+
+Climate Resilience
+
+Nodes connected with animated lines.
+
+This section becomes highly visual.
+
+SECTION 7 — VALUES
+
+Interactive horizontal section.
+
+Not cards.
+
+Each value expands on hover.
+
+Values:
+
+Scientific Integrity
+Innovation
+Reliability
+Sustainability
+Collaboration
+
+When hovered:
+
+description appears
+gold highlight activates
+SECTION 8 — CTA
+
+Premium dark gradient section.
+
+Same style as homepage CTA.
+
+Headline:
+
+Building a Climate-Resilient Future Through Intelligence
+
+Text:
+
+Partner with us to transform atmospheric and geospatial data into meaningful action.
+
+Buttons:
+
+Contact Us
+
+Explore Solutions
 
 ANIMATIONS
 
-Reduce animation complexity.
+Use Framer Motion heavily but elegantly.
+
+Include:
+
+fadeUp
+stagger animations
+scroll-triggered reveals
+hover microinteractions
+image zoom effects
+animated timeline
+animated workflow connections
+parallax hero
+
+No flashy animations.
+
+Everything should feel enterprise-grade.
+
+IMPORTANT
 
 Avoid:
 
-* Excessive floating particles
-* Constant movement
-* Decorative motion everywhere
-* Animation for the sake of animation
+❌ Team cards
+❌ Stats counters
+❌ Generic startup metrics
+❌ Testimonials
+❌ Pricing style layouts
+❌ Repeated card grids
 
-Use subtle motion only when it improves UX.
+Instead use:
 
-Examples:
+✅ Editorial layouts
+✅ Timelines
+✅ Split sections
+✅ Interactive typography
+✅ Leadership-focused storytelling
+✅ Scientific visual elements
+✅ Clean whitespace
 
-* Section reveal
-* Fade-in
-* Gentle hover effects
-
-Keep motion professional and restrained.
-
-CODE QUALITY
-
-Very important:
-
-Keep the code simple.
-
-I am learning React and maintaining this project myself.
-
-Avoid:
-
-* Over-engineering
-* Excessive abstraction
-* Complex positioning hacks
-* Unnecessarily complicated Framer Motion setups
-
-Prioritize:
-
-* Readability
-* Maintainability
-* Clean JSX structure
-
-The final code should be easier to understand than the current version.
-
-HERO SECTION
-
-The hero image itself is good and should be preserved or improved.
-
-However, there is a visual problem:
-
-The transition from the hero section to the next section looks rough and unnatural.
-
-Currently the hero image appears to disappear behind a white fog layer or abrupt fade.
-
-The transition between sections should feel smooth and intentional.
-
-Requirements:
-
-* No harsh section boundaries
-* No obvious image cutoff
-* No awkward white fog effect
-* Create a professional visual transition into the next section
-
-The hero should naturally flow into the content below.
-
-CORE CAPABILITIES SECTION
-
-This section needs special attention.
-
-Avoid:
-
-* Boxes
-* Cards
-* Generic feature grids
-
-Instead:
-
-Create a more unique and elegant presentation.
-
-The content should feel connected to a central theme of intelligence, earth observation, climate science, and geospatial analytics.
-
-Keep it simple and readable.
-
-Do not overcomplicate it with decorative graphics.
-
-GENERAL GOAL
-
-Redesign the entire Home page to feel like a world-class atmospheric and geospatial intelligence company.
-
-Focus on:
-
-* Better visual hierarchy
-* Better readability
-* Better spacing
-* Cleaner layouts
-* Professional aesthetics
-* White + blue + gold branding
-* Simpler and more maintainable React code
-
-Return the complete updated Home.jsx file with all improvements implemented.
+The final page should feel like a premium climate technology company website built for investors, government agencies, research institutions, and enterprise clients, while remaining minimal, elegant, and consistent with the existing homepage design language.
