@@ -105,7 +105,9 @@ export default function About() {
       absolute
       left-[-120px]
       top-[30%]
-      w-[380px]
+      w-[220px]
+xl:w-[280px]
+2xl:w-[380px]
       -rotate-[20deg]
       pointer-events-none
       select-none
@@ -131,7 +133,9 @@ export default function About() {
       absolute
       right-[-120px]
       bottom-[25%]
-      w-[380px]
+     w-[220px]
+xl:w-[280px]
+2xl:w-[380px]
       rotate-[20deg]
       pointer-events-none
       select-none
@@ -246,7 +250,7 @@ export default function About() {
               </p>
               <p className="leading-relaxed" style={{ color: '#6B7280' }}>
                 Our focus remains India-specific — building for the monsoon variability, coastal
-                exposure, and lightning risk that define the country's climate challenges, rather
+                exposure,lightning risk and natural disasters that define the country's climate challenges, rather
                 than adapting generic global models after the fact.
               </p>
             </motion.div>
@@ -636,7 +640,7 @@ export default function About() {
           7 — VALUES
           Horizontal, expand on hover
       ══════════════════════════════ */}
-      <section className="py-16 px-6" style={{ background: 'linear-gradient(to bottom, #ffffff, #EEF6FF)' }}>
+      {/* <section className="py-16 px-6" style={{ background: 'linear-gradient(to bottom, #ffffff, #EEF6FF)' }}>
         <div className="max-w-6xl mx-auto">
 
           <AnimatedSection className="text-center mb-4">
@@ -692,7 +696,7 @@ export default function About() {
             })}
           </AnimatedSection>
         </div>
-      </section>
+      </section> */}
 
 
       {/* ══════════════════════════════

@@ -7,6 +7,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import News from './pages/News'
 import Contact from './pages/Contact'
+import { useEffect } from 'react'
 
 const pageVariants = {
   initial: { opacity: 0, y: 16 },
@@ -22,6 +23,11 @@ const pageTransition = {
 
 function AnimatedRoutes() {
   const location = useLocation()
+
+    useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   return (
     <AnimatePresence mode="wait">
       <motion.div

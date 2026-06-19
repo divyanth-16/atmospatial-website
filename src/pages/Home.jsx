@@ -141,7 +141,7 @@ export default function Home() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.65], [1, 0])
 
   return (
-    <div className="overflow-x-hidden" style={{ background: '#ffffff', color: '#0F2557' }}>
+    <div className="overflow-x-hidden" style={{ background: '#000000', color: '#0F2557' }}>
 
       {/* ══════════════════════════════
           HERO
