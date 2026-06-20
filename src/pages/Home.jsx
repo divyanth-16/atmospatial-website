@@ -135,7 +135,7 @@ function SectionLabel({ children }) {
 export default function Home() {
   const heroRef = useRef(null)
   const [activeGroup, setActiveGroup] = useState('group1')
-  const [activeCapability, setActiveCapability] = useState(0)
+  const [activeCapability, setActiveCapability] = useState(null)
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
   const heroY       = useTransform(scrollYProgress, [0, 1], [0, 60])
   const heroOpacity = useTransform(scrollYProgress, [0, 0.65], [1, 0])
@@ -351,7 +351,7 @@ export default function Home() {
       <button
         onClick={() => {
           setActiveGroup('group1')
-          setActiveCapability(0)
+          setActiveCapability(null)
         }}
         className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
           activeGroup === 'group1'
@@ -401,51 +401,71 @@ export default function Home() {
 
         <button
           className="w-full text-left"
-          onClick={() => setActiveCapability(index)}
+          onClick={() =>
+  setActiveCapability(
+    activeCapability === index ? null : index
+  )
+}
         >
 
-          <div className="flex gap-5 group-hover:text-[#C69214]">
+       <div className="flex gap-5 group-hover:text-[#C69214]">
 
-            <span
-              className="text-5xl font-black shrink-0  "
-              
-            >
-              {cap.num}
-            </span>
+  <span
+    className="text-5xl font-black shrink-0"
+  >
+    {cap.num}
+  </span>
 
-            <div>
+  <div className="flex-1">
 
-              <h3
-  className={`
-    text-xl font-bold transition-colors duration-300
-    group-hover:text-[#C69214]
-    ${
-      activeCapability === index
-        ? 'text-blue-900'
-        : 'text-blue-800'
-    }
-  `}
->
-                {cap.label}
-              </h3>
+    <div className="flex items-center justify-between">
 
-              {activeCapability === index && (
-                <motion.p
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{
-                    opacity: 1,
-                    height: 'auto'
-                  }}
-                  className="mt-4 leading-relaxed"
-                  style={{ color: '#6B7280' }}
-                >
-                  {cap.desc}
-                </motion.p>
-              )}
+      <h3
+        className={`
+          text-xl font-bold transition-colors duration-300
+          group-hover:text-[#C69214]
+          ${
+            activeCapability === index
+              ? 'text-blue-900'
+              : 'text-blue-800'
+          }
+        `}
+      >
+        {cap.label}
+      </h3>
 
-            </div>
+      <ChevronDown
+        size={20}
+        className={`
+          opacity-0 group-hover:opacity-100
+          transition-all duration-300 shrink-0
+          ${
+            activeCapability === index
+              ? 'rotate-180 text-[#C69214]'
+              : 'rotate-0 text-blue-800'
+          }
+        `}
+      />
 
-          </div>
+    </div>
+
+    {activeCapability === index && (
+      <motion.p
+        initial={{ opacity: 0, height: 0 }}
+        animate={{
+          opacity: 1,
+          height: 'auto'
+        }}
+        className="mt-4 leading-relaxed"
+        style={{ color: '#6B7280' }}
+      >
+        {cap.desc}
+      </motion.p>
+    )}
+
+  </div>
+
+</div>
 
         </button>
 
@@ -460,7 +480,7 @@ export default function Home() {
   <AnimatedSection>
 
     <motion.div
-      className="sticky top-30 mt-28"
+      className="sticky top-30 mt-20"
       animate={{
         y: [0, -8, 0]
       }}

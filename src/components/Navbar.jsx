@@ -78,12 +78,12 @@ export default function Navbar() {
                     }`}
                   >
                     {link.label}
-                    {isActive && (
+                    {/* {isActive && (
                       <motion.span
                         layoutId="nav-indicator"
                         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-yellow-500 rounded-full"
                       />
-                    )}
+                    )} */}
                   </Link>
                 )
               })}
