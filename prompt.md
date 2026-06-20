@@ -1,296 +1,377 @@
-You are a senior award-winning UI/UX designer and staff-level React engineer. Your task is to completely redesign and rebuild my Contact page while preserving the overall design language of the existing AtmoSpatial website.
+You are a senior React architect, Sanity CMS expert, UX designer, and enterprise frontend engineer.
 
-IMPORTANT CONTEXT:
+I am building the official website for:
 
-I have already built the Home page and About page. They follow a premium enterprise technology aesthetic with:
+ATMOSPATIAL ANALYTICS PVT. LTD.
+
+The website already has:
+
+* Home Page
+* About Page
+* Contact Page
+
+Design language already established across the website:
 
 * White background
-* Deep blue primary color
-* Yellow/gold accent color
+* Deep professional blue as primary color
+* Subtle yellow/gold accent color
+* Enterprise-grade appearance
+* Scientific and professional
 * Clean typography
-* Scientific and professional appearance
-* Enterprise SaaS / Climate Intelligence company feel
-* Minimalistic design
-* High trust and credibility
-* Premium spacing and layout
+* Premium spacing
+* Minimal animations
+* Minimal visual clutter
+* Highly readable
+* Trustworthy and corporate
+* Similar visual quality to climate intelligence, geospatial analytics, atmospheric science, remote sensing, and research organizations
 
-The Contact page must visually belong to the same design system.
+IMPORTANT:
 
-CURRENT PROBLEM:
+Do NOT create a flashy news website.
 
-The current Contact page feels too heavy, too card-based, too startup-template-like, and too busy.
+Do NOT create a media-company style design.
 
-I want a much cleaner and more premium experience.
+Do NOT create heavy animations.
 
-DESIGN GOALS:
+Do NOT create large gradients everywhere.
 
-1. White background throughout most of the page.
-2. Deep blue (#1326D3 style) as primary brand color.
-3. Yellow/gold accent used sparingly.
-4. Extremely professional.
-5. Enterprise-grade appearance.
-6. Similar quality level as modern Stripe, Palantir, Linear, Vercel, Arcadis, Planet Labs, IBM Consulting, or enterprise climate technology companies.
-7. Very minimal use of boxes/cards.
-8. Very minimal use of shadows.
-9. No glassmorphism.
-10. No dark theme sections.
-11. No flashy gradients everywhere.
-12. No startup cliché designs.
-13. Keep the page clean and readable.
-14. Focus on hierarchy, whitespace, typography, and alignment.
+Do NOT create card overload.
 
-MOTION REQUIREMENTS:
+Do NOT create a modern startup-looking UI.
 
-Keep animations extremely minimal.
+The final design should feel like:
 
-Allowed:
+* Scientific
+* Professional
+* Corporate
+* Research-oriented
+* Clean
+* Premium
+* Easy to read
 
-* Button hover effects
-* Input focus states
-* Small fade-ins
-* Very subtle micro-interactions
+The Contact page style should be used as the primary design reference.
 
-Not allowed:
+====================================================
+EXISTING SANITY PROJECT
+=======================
 
-* Floating elements
-* Excessive Framer Motion usage
-* Large entrance animations
-* Scroll-triggered gimmicks
-* Orb effects
-* Heavy parallax
+A Sanity CMS project already exists.
 
-The page should feel calm and trustworthy.
+Project ID:
 
-PAGE STRUCTURE:
+1o1de3ss
 
-SECTION 1 — HERO
+Dataset:
 
-Create a simple hero section.
+production
 
-Content:
+CMS folder already exists:
 
-Small label:
-"Contact Us"
+atmospatial-cms/
 
-Headline:
-"Let's Build Better Climate Intelligence"
+DO NOT create a new Sanity project.
 
-Subheadline:
-"Whether you're a government agency, research institution, enterprise, or investor, we'd be glad to discuss how AtmoSpatial can support your mission."
+DO NOT regenerate Sanity setup from scratch.
 
-No huge visual effects.
+Only generate the files required to connect my existing React website with my existing Sanity CMS.
 
-No large illustrations.
+====================================================
+MAIN GOAL
+=========
 
-Use typography and spacing.
+My father will update news daily.
 
-Add a subtle blue accent line.
+He does not know coding.
 
-SECTION 2 — CONTACT INFORMATION
+He should never need:
 
-Show contact information in a clean layout.
+* VS Code
+* GitHub
+* React
+* Deployments
 
-Email:
-[atmospatialanalyticsofficial@gmail.com](mailto:atmospatialanalyticsofficial@gmail.com)
+He should only:
 
-Location:
-Visakhapatnam, Andhra Pradesh, India
+1. Open Sanity Studio
+2. Create article
+3. Upload image
+4. Write article
+5. Click Publish
 
-Website:
-atmospatial.com
+The website should automatically display the article.
 
-Display these elegantly.
+====================================================
+NEWS PAGE
+=========
 
-Avoid giant cards.
+Route:
 
-Could use:
+/news
 
-* clean rows
-* subtle dividers
-* icon + content layout
+Design Requirements:
 
-SECTION 3 — CONTACT FORM
+White background.
 
-This is the primary focus.
+Professional layout.
 
-Fields:
+Clean spacing.
 
-* Full Name
-* Email Address
-* Organization
-* Inquiry Type
-* Message
+No dark sections.
 
-Inquiry Types:
+No excessive effects.
 
-* Product Partnership
-* Research Collaboration
-* Government / Institutional Project
-* Early Access Request
-* Investment Inquiry
-* General Inquiry
+Use subtle blue accents.
 
-The form should look premium.
+Use subtle yellow highlights only where appropriate.
 
-Use:
+Keep the design minimal.
 
-* clean borders
-* generous spacing
-* subtle focus states
+News cards should feel premium and trustworthy.
 
-Avoid:
+====================================================
+NEWS GRID
+=========
 
-* thick borders
-* excessive backgrounds
-* heavy cards
+Display:
 
-Submit Button Text:
+3 articles per row on desktop.
 
-"Send Message"
+2 on tablet.
 
-SECTION 4 — FAQ / EXPECTATIONS
+1 on mobile.
 
-Small section:
+Each card contains:
 
-"What happens next?"
+* Featured image
+* Category
+* Publish date
+* Title
+* Short description
+* Read More button
+
+Card Design:
+
+* White cards
+* Thin borders
+* Soft shadow
+* Rounded corners
+* Professional appearance
+
+Hover Effect:
+
+Only subtle:
+
+* Slight lift
+* Slight shadow increase
+* Smooth transition
+
+Nothing dramatic.
+
+====================================================
+LOAD MORE FUNCTIONALITY
+=======================
+
+Initially show:
+
+9 articles
+
+Below the grid show:
+
+View More
+
+When clicked:
+
+Load 9 more articles.
 
 Example:
 
-1. We review your inquiry.
-2. Our team evaluates requirements.
-3. We respond within 24–48 business hours.
+9 articles
+↓
+18 articles
+↓
+27 articles
+↓
+36 articles
 
-Simple and professional.
+Continue until all articles are visible.
 
-SECTION 5 — FINAL CTA
+If all articles are loaded:
 
-Very lightweight section.
+Hide the button.
 
-Headline:
+====================================================
+FEATURED ARTICLE
+================
 
-"Interested in collaborating with AtmoSpatial?"
+At the top of the News page create:
 
-Button:
+Featured Article Section
 
-"Start a Conversation"
+Only display articles marked:
 
-VISUAL STYLE:
+Featured = true
 
-Prioritize:
+Show the newest featured article.
 
-* whitespace
-* alignment
-* typography
-* restraint
+Layout:
 
-The page should feel:
+Large image
 
-* scientific
-* credible
-* enterprise
-* premium
-* trustworthy
+Title
 
-NOT:
+Short summary
 
-* trendy startup
-* crypto website
-* marketing landing page
+Read Full Article button
 
-TECHNICAL REQUIREMENTS:
+Professional design.
 
-IMPORTANT:
+No huge hero banners.
 
-The contact form must actually work.
+No fullscreen sections.
 
-Do NOT simulate submissions.
+====================================================
+ARTICLE PAGE
+============
 
-Implement a production-ready contact workflow.
+Route:
 
-Create every file required.
+/news/:slug
 
-Use:
+When a user clicks an article:
 
-Frontend:
-React + Vite
+Open dedicated article page.
 
-Backend:
-Vercel Serverless Functions
+Layout:
 
-Email:
-Nodemailer
+Featured Image
 
-Target email:
-[atmospatialanalyticsofficial@gmail.com](mailto:atmospatialanalyticsofficial@gmail.com)
+Category
 
-Required implementation:
+Publish Date
 
-1. Create API endpoint:
+Article Title
 
-/api/contact.js
+Article Content
 
-2. Install and configure Nodemailer.
+Related Articles section
 
-3. Use environment variables.
+Back to News button
 
-4. Create frontend service layer.
+Professional typography.
 
-5. Create form submission logic.
+Readable content width.
 
-6. Proper loading states.
+Clean spacing.
 
-7. Proper success state.
+====================================================
+SANITY CMS SCHEMA
+=================
 
-8. Proper error state.
+Create complete article schema with:
 
-9. Validation.
+Title
 
-10. Spam protection basics.
+Slug
 
-11. Clean architecture.
+Short Description
 
-FILES TO CREATE:
+Category
 
-Create all necessary files and provide complete code:
+Featured Image
 
-* Contact.jsx
-* api/contact.js
-* any helper/service files
-* environment variable examples
-* required package installations
-* required Vercel configuration if needed
+Author
 
-EMAIL CONTENT FORMAT:
+Publish Date
 
-Subject:
-New Contact Inquiry — AtmoSpatial
+Featured Toggle
 
-Body:
+Article Content (Rich Text)
 
-Name:
-Email:
-Organization:
-Inquiry Type:
+SEO Title
 
-Message:
+SEO Description
 
-The form must send emails to:
+====================================================
+DUMMY DATA
+==========
 
-[atmospatialanalyticsofficial@gmail.com](mailto:atmospatialanalyticsofficial@gmail.com)
+Create 10 sample articles.
 
-CODE QUALITY:
+Topics should match company domain:
 
-* Production ready
-* Clean
-* Modular
-* Professional
-* Modern React practices
-* No unnecessary complexity
+* Weather Forecasting
+* Climate Intelligence
+* Remote Sensing
+* Disaster Analytics
+* Atmospheric Science
+* Agriculture Intelligence
+* Insurance Risk Analytics
+* Flood Monitoring
+* Cyclone Tracking
+* Geospatial Intelligence
 
-IMPORTANT:
+Use realistic dummy content.
 
-Do not partially modify my existing Contact page.
+For images:
 
-Instead, redesign it from scratch while keeping the overall AtmoSpatial design language consistent with the Home and About pages.
+Use placeholder image references with clear comments.
 
-Return complete code for every required file and explain where each file should be placed in the project structure.
+====================================================
+REACT INTEGRATION
+=================
+
+Generate all required React files.
+
+Generate:
+
+* Sanity Client
+* GROQ Queries
+* Data Fetching Logic
+* News Page
+* Article Page
+* News Card Component
+* Load More Functionality
+* Image URL Builder
+* Error Handling
+* Loading States
+* Empty States
+
+====================================================
+PROJECT STRUCTURE
+=================
+
+Show the complete final folder structure.
+
+Generate every required file.
+
+Show exactly where every file should be placed.
+
+====================================================
+SANITY FILES
+============
+
+Generate:
+
+schemaTypes/article.js
+
+schemaTypes/index.js
+
+Any required updates to:
+
+sanity.config.js
+
+====================================================
+IMPORTANT
+=========
+
+Generate production-ready code.
+
+Generate complete code.
+
+Do not generate partial snippets.
+
+Do not provide explanations first.
+
+Output all files in proper order.
+
+The final result must work with my existing Sanity CMS project and existing React website.

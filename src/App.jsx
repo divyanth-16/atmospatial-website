@@ -7,6 +7,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import News from './pages/News'
 import Contact from './pages/Contact'
+import Article from './pages/Article'
 import { useEffect } from 'react'
 
 const pageVariants = {
@@ -47,6 +48,7 @@ function AnimatedRoutes() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.div>
