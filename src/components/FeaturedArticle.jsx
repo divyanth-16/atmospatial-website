@@ -21,14 +21,14 @@ export default function FeaturedArticle({ article }) {
 
   const { slug, title, shortDescription, category, featuredImage, publishDate } = article
   const imageUrl = featuredImage
-    ? urlFor(featuredImage).width(960).height(560).fit('crop').url()
+    ? urlFor(featuredImage).width(960).fit('max').url()
     : null
 
   return (
     <Link
       to={`/news/${slug?.current}`}
       className="group grid md:grid-cols-2 gap-8 md:gap-12 items-center rounded-2xl overflow-hidden p-2 md:p-3 transition-colors"
-      style={{ border: '1px solid #E5ECF8' }}
+      style={{ border: '2px solid #E5ECF8' }}
     >
       {/* Image */}
       <div className="rounded-xl overflow-hidden aspect-[16/10]" style={{ background: '#EEF6FF' }}>
@@ -36,7 +36,7 @@ export default function FeaturedArticle({ article }) {
           <img
             src={imageUrl}
             alt={featuredImage?.alt || title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function FeaturedArticle({ article }) {
       {/* Content */}
       <div className="py-2 pr-2 md:pr-4">
         <p
-          className="text-xs font-bold uppercase tracking-[0.2em] mb-4"
+          className="text-s font-bold uppercase tracking-[0.2em] mb-4"
           style={{ color: '#C69214' }}
         >
           Featured Article

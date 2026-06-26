@@ -21,7 +21,7 @@ export default function NewsCard({ article }) {
   const { slug, title, shortDescription, category, featuredImage, publishDate } = article
 
   const imageUrl = featuredImage
-    ? urlFor(featuredImage).width(640).height(380).fit('crop').url()
+    ? urlFor(featuredImage).width(640).fit('max').url()
     : null
 
   return (
@@ -47,7 +47,7 @@ export default function NewsCard({ article }) {
           <img
             src={imageUrl}
             alt={featuredImage?.alt || title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
         ) : (

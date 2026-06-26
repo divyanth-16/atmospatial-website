@@ -112,7 +112,7 @@ export default function Article() {
   }
 
   const { title, shortDescription, category, featuredImage, author, publishDate, content, seoTitle, seoDescription } = article
-  const imageUrl = featuredImage ? urlFor(featuredImage).width(1200).height(675).fit('crop').url() : null
+  const imageUrl = featuredImage ? urlFor(featuredImage).width(1200).fit('max').url() : null
 
   return (
     <div style={{ background: '#ffffff', color: '#0F2557' }}>
@@ -171,7 +171,7 @@ export default function Article() {
               <img
                 src={imageUrl}
                 alt={featuredImage?.alt || title}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-contain"
               />
             </motion.div>
           )}

@@ -73,6 +73,7 @@ export default function News() {
         </section>
       )}
 
+      <p  className="max-w-6xl mx-auto pb-3 text-2xl font-bold text-#0F2557">All News</p>
       {/* ── Article grid ── */}
       <section className="px-6 pb-28">
         <div className="max-w-6xl mx-auto">
