@@ -6,5 +6,7 @@
 // `article`. Do not remove existing entries — only add `article` to them.
 
 import article from './article'
+import book from './book'
+import journal from './journal'
 
-export const schemaTypes = [article]
+export const schemaTypes = [article, book, journal]

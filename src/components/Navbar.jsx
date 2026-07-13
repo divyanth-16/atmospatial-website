@@ -7,6 +7,7 @@ const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   { label: 'Products', path: '/products' },
+  { label: 'Library', path: '/library' },
   { label: 'News', path: '/news' },
   { label: 'Contact', path: '/contact' },
 ]
@@ -78,12 +79,6 @@ export default function Navbar() {
                     }`}
                   >
                     {link.label}
-                    {/* {isActive && (
-                      <motion.span
-                        layoutId="nav-indicator"
-                        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-yellow-500 rounded-full"
-                      />
-                    )} */}
                   </Link>
                 )
               })}

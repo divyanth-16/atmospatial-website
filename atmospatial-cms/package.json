@@ -15,13 +15,15 @@
     "sanity"
   ],
   "dependencies": {
+    "@portabletext/block-tools": "^1.0.2",
+    "@portabletext/editor": "^1.21.5",
     "@portabletext/react": "^6.2.0",
     "@sanity/client": "^7.23.0",
     "@sanity/image-url": "^2.1.1",
-    "@sanity/vision": "^6.1.0",
+    "@sanity/vision": "^3.70.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "sanity": "^6.1.0",
+    "sanity": "^3.70.0",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
