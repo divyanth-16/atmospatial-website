@@ -20,7 +20,7 @@ import LoadingSkeleton from '../components/LoadingSkeleton'
 
 /* ─── Helpers ─── */
 
-function normalise(str = '') {
+function normalise(str) {
   return str.toLowerCase()
 }
 
@@ -29,9 +29,7 @@ function matchesSearch(item, q) {
   const needle = normalise(q)
   return (
     normalise(item.title).includes(needle) ||
-    normalise(item.author || item.publisher || '').includes(needle) ||
-    normalise(item.category).includes(needle) ||
-    normalise(item.description).includes(needle)
+    normalise(item.author || item.publisher || '').includes(needle)
   )
 }
 

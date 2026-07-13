@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import { Mail, MapPin, Globe, Linkedin, Twitter, Github } from 'lucide-react'
+import { label } from 'framer-motion/client'
 
 
 const quickLinks = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
   { label: 'Products', path: '/products' },
+  {label: 'Library', path: '/library'},
   { label: 'News', path: '/news' },
   { label: 'Contact', path: '/contact' },
 ]
