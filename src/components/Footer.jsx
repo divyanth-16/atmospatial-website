@@ -6,9 +6,10 @@ import { label } from 'framer-motion/client'
 const quickLinks = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },
-  { label: 'Products', path: '/products' },
+  // { label: 'Products', path: '/products' },
   {label: 'Library', path: '/library'},
   { label: 'News', path: '/news' },
+  { label: 'Careers',   path: '/careers' },
   { label: 'Contact', path: '/contact' },
 ]
 
@@ -123,17 +124,34 @@ export default function Footer() {
         </div>
       </div>
 
+
       {/* Bottom bar */}
-      <div className="border-t border-white/5">
-        <div className="section-padding container-max py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} Atmospatial Analytics Private Limited. All rights reserved.
-          </p>
-          <p className="text-xs text-white/20">
-            CIN: Under Registration · Visakhapatnam, India
-          </p>
-        </div>
-      </div>
+     <div className="border-t border-white/5">
+            <div className="section-padding container-max py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <p className="text-xs text-white/30">
+                © {new Date().getFullYear()} Atmospatial Analytics Private Limited. All rights reserved.
+              </p>
+              <div className="flex items-center gap-4">
+                <Link
+                  to="/privacy-policy"
+                  className="text-xs text-white/25 hover:text-white/50 transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+                <span className="text-white/15" aria-hidden="true">·</span>
+                <Link
+                  to="/terms-and-conditions"
+                  className="text-xs text-white/25 hover:text-white/50 transition-colors"
+                >
+                  Terms &amp; Conditions
+                </Link>
+                <span className="text-white/15 hidden sm:inline" aria-hidden="true">·</span>
+                <p className="text-xs text-white/20 hidden sm:block">
+                  CIN: Under Registration · Visakhapatnam, India
+                </p>
+              </div>
+            </div>
+          </div>
     </footer>
   )
 }

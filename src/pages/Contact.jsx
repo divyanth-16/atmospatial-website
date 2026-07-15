@@ -112,11 +112,11 @@ export default function Contact() {
       {/* ══════════════════════════════
           1 — HERO
       ══════════════════════════════ */}
-      <section className="pt-36 pb-20 px-6">
+      <section className="pt-28 pb-12 px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial="hidden" animate="show" variants={fadeIn}>
             <p
-              className="text-xs font-bold uppercase tracking-[0.25em] mb-5"
+              className="text-xs font-bold uppercase tracking-[0.25em] mb-2"
               style={{ color: '#C69214' }}
             >
               Contact Us

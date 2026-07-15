@@ -9,11 +9,11 @@ const fadeIn = {
 
 export default function LibraryHero() {
   return (
-    <section className="pt-36 px-6">
+    <section className="pt-28 px-6">
       <div className="max-w-5xl mx-auto">
         <motion.div initial="hidden" animate="show" variants={fadeIn}>
           <p
-            className="text-xs font-bold uppercase tracking-[0.25em] mb-5"
+            className="text-xs font-bold uppercase tracking-[0.25em] mb-2"
             style={{ color: '#D4A017' }}
           >
             Research Resources

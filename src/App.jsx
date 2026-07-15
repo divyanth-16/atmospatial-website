@@ -9,6 +9,9 @@ import News from './pages/News'
 import Contact from './pages/Contact'
 import Article from './pages/Article'
 import Library from './pages/Library'
+import Careers           from './pages/Careers'
+import PrivacyPolicy     from './pages/PrivacyPolicy'
+import TermsConditions   from './pages/TermsConditions'
 import { useEffect } from 'react'
 
 const pageVariants = {
@@ -52,6 +55,9 @@ function AnimatedRoutes() {
           <Route path="/news" element={<News />} />
           <Route path="/news/:slug" element={<Article />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsConditions />} />
         </Routes>
       </motion.div>
     </AnimatePresence>

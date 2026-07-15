@@ -7,6 +7,7 @@
 
 import article from './article'
 import book from './book'
+import career from './career'
 import journal from './journal'
 
-export const schemaTypes = [article, book, journal]
+export const schemaTypes = [article, book, journal, career]
