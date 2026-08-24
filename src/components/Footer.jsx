@@ -147,7 +147,7 @@ export default function Footer() {
                 </Link>
                 <span className="text-white/15 hidden sm:inline" aria-hidden="true">·</span>
                 <p className="text-xs text-white/20 hidden sm:block">
-                  CIN: Under Registration · Visakhapatnam, India
+                  CIN: U62099AP2026PTC125947 · Visakhapatnam, India
                 </p>
               </div>
             </div>
